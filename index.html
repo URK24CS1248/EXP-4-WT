@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photography Portfolio</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f1ec;
+        color: #222;
+    }
+
+    header {
+        color: white;
+        text-align: center;
+        padding: 70px 40px;
+        background-image: url("images/nature.jpg"), url("images/camera.jpg");
+        background-size: cover, 200px;
+        background-position: center, right;
+        background-repeat: no-repeat;
+        text-shadow: 2px 2px 5px #000;
+    }
+
+    header h1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .welcome {
+        background: white;
+        margin: 20px;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .welcome h2 {
+        color: #6d5435;
+    }
+
+    .gallery-section {
+        margin: 20px;
+        padding: 20px;
+        border: 15px solid transparent;
+        border-image: url("images/frame.png") 30 round;
+        background: white;
+    }
+
+    .gallery-section h2 {
+        color: #6d5435;
+    }
+
+    .photo {
+        display: inline-block;
+        vertical-align: top;
+        width: 28%;
+        margin: 1%;
+        padding: 15px;
+        text-align: center;
+        background: #f8f6f2;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .photo:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .photo img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: none;
+        border-radius: 8px;
+    }
+
+    .photo h3:hover + img {
+        display: block;
+    }
+
+    table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: white;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        border: 1px solid #aaa;
+        text-align: center;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #eeeae4;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    tr:hover {
+        background-color: #d8cfc3;
+    }
+
+    form {
+        width: 50%;
+        margin: 20px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0 15px;
+        box-sizing: border-box;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+    }
+
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: 2px solid #8b6f47;
+    }
+
+    input:required,
+    textarea:required {
+        border-left: 4px solid #8b6f47;
+    }
+
+    input:valid {
+        background-color: #eef5ec;
+    }
+
+    input:invalid {
+        background-color: #fff0f0;
+    }
+
+    button {
+        background-color: #8b6f47;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background-color: #6d5435;
+    }
+
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .photo {
+            display: block;
+            width: 90%;
+            margin: 15px auto;
+        }
+
+        form {
+            width: 80%;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+    }
+</style>
+</body>
+</html>
